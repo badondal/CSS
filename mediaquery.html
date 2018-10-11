@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <style>
+        @media (max-width:600px){
+            body{
+                background-color: green;
+                }
+        }
+        @media (max-width:500px){
+            body{
+                background-color: red;
+                }
+        }
+        /* 케스케이딩(우선순위)를 위해 작은단위가 나중에 씌여져야 함 */
+        @media (min-width:600px){
+            body{
+                background-color: blue;
+                }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>~500px:red</li>
+        <li>501-600px:green</li>
+        <li>601px~:blue</li>
+</ul>
+</body>
+</html>
